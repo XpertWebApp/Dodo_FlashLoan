@@ -1,4 +1,4 @@
-import { ethers } from "hardhat";
+const { ethers } = require("hardhat");
 
 
 export const getBigNumber = (amount, decimals = 18) => {

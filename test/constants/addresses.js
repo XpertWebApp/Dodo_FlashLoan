@@ -6,7 +6,7 @@ export const USDC_WHALE = "0x075e72a5eDf65F0A5f44699c7654C1a76941Ddc8";
 export const dex1inch = "0x11111112542D85B3EF69AE05771c2dCCff4fAa26";
 export const BurnAddress = "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee";
 
-export type ERC20Map = { [erc20: string]: string };
+export const ERC20Map = { erc20 };
 
 export const erc20Address: ERC20Map = {
   DAI: "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063",

@@ -5,7 +5,10 @@
     "hardhat": "^2.13.0"
   },
   "dependencies": {
+    "@nomiclabs/hardhat-waffle": "^2.0.5",
     "@openzeppelin/contracts": "^4.8.2",
-    "dotenv": "^16.0.3"
+    "@openzeppelin/hardhat-upgrades": "^1.22.1",
+    "dotenv": "^16.0.3",
+    "solidity-coverage": "^0.8.2"
   }
 }

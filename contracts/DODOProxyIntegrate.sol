@@ -4,7 +4,7 @@
     SPDX-License-Identifier: Apache-2.0
 */
 
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.4;
 
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
@@ -13,6 +13,7 @@ import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 import "./IDODOV2.sol";
 import "./IDODOProxy.sol";
 import "./IDODOV1Helper.sol";
+import "./IUniswapV2Pair.sol";
 
 import "hardhat/console.sol";
 
@@ -63,7 +64,7 @@ contract DODOProxyIntegrate {
         IERC20(fromToken).transferFrom(
             msg.sender,
             address(this),
-            fromTokenAmountSignerWithAddress[]
+           fromTokenAmount
         );
         uint256 receivedBaseAmount = IDODOV1Helper(dodoV1Helper)
             .querySellQuoteToken(dodoV1Pool, fromTokenAmount);
